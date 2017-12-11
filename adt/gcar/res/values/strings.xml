@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">gcar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+    
+    <string name="hello">Hello World, BlueToothCActivity!</string>
+    <string name="none_paired">没有配对好的设备</string>
+    <string name="select_device">选择一个设备连接</string>
+    <string name="scanning">正在扫描...</string>
+    <string name="none_found">没有搜索到可用设备</string>
+    <string name="none_connect">没有连接</string>
+    <string name="not_support_bluetooth">您的手机不支持蓝牙</string>
+    <string name="Wait_for_connection">等待连接中，请稍等…………</string>
+    <string name="Connection_successful">已经连接成功……：</string>
+    <string name="Bluetooth_untapped">蓝牙未开启，程序退出</string>
+    
+</resources>

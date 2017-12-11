@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="textView1">false</item>
+    <item type="id" name="textView2">false</item>
+    <item type="id" name="title_left_text">false</item>
+    <item type="id" name="title_right_text">false</item>
+    <item type="id" name="title_paired_devices">false</item>
+    <item type="id" name="paired_devices">false</item>
+    <item type="id" name="title_new_devices">false</item>
+    <item type="id" name="new_devices">false</item>
+    <item type="id" name="button_scan">false</item>
+    <item type="id" name="linearLayout1">false</item>
+    <item type="id" name="linearLayout3">false</item>
+    <item type="id" name="imageButtonup">false</item>
+    <item type="id" name="linearLayout4">false</item>
+    <item type="id" name="imageButtonleft">false</item>
+    <item type="id" name="imageButtonstop">false</item>
+    <item type="id" name="imageButtonright">false</item>
+    <item type="id" name="linearLayout5">false</item>
+    <item type="id" name="textView4">false</item>
+    <item type="id" name="imageButtondown">false</item>
+    <item type="id" name="textView5">false</item>
+    <item type="id" name="linearLayout2">false</item>
+    <item type="id" name="buttonsensor">false</item>
+    <item type="id" name="buttonbt">false</item>
+    <item type="id" name="button1">false</item>
+    <item type="id" name="button2">false</item>
+    <item type="id" name="button3">false</item>
+    <item type="id" name="button4">false</item>
+    <item type="id" name="button5">false</item>
+    <item type="id" name="button6">false</item>
+    <item type="id" name="button7">false</item>
+    <item type="id" name="button8">false</item>
+    <item type="id" name="button9">false</item>
+</resources>

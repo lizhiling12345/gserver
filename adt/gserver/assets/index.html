@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/jquery-3.2.1.min.js"></script>
+<script>
+
+/*初始化事件*/
+$(document).ready(function(){
+
+  $("#btnBluetoothList").click(function(){
+    $.get("/bluetooth?m=list",function(data,status){
+    	//var objJson = eval(data);
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnBluetoothConnect").click(function(){
+    $.get("/bluetooth?m=connect&uuid=",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnBluetoothSendA").click(function(){
+    $.get("/bluetooth?m=send&data=A",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnBluetoothSendB").click(function(){
+    $.get("/bluetooth?m=send&data=B",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnBluetoothSendC").click(function(){
+    $.get("/bluetooth?m=send&data=C",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnBluetoothSendD").click(function(){
+    $.get("/bluetooth?m=send&data=D",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnBluetoothSendF").click(function(){
+    $.get("/bluetooth?m=send&data=F",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  
+  $("#btnFileList").click(function(){
+    $.get("/file?m=list",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnCameraList").click(function(){
+    $.get("/camera?m=list",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnSoundList").click(function(){
+    $.get("/sound?m=list",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnRecordList").click(function(){
+    $.get("/record?m=list",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnRecordShow").click(function(){
+    $.get("/record?m=show",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnRecordShow02").click(function(){
+    $.get("/record?m=show02",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+  $("#btnRecordShow03").click(function(){
+    $.get("/record?m=show03",function(data,status){
+    	$("#divInfo").html(data);
+    });
+  });
+  
+});
+
+
+//定时刷新日志
+function refreshLog(){
+	$.get("/log?m=show",function(data,status){
+    	$("#divLog").append(data);
+    });
+}
+setInterval(refreshLog,1000);
+
+</script>
+</head>
+<body>
+
+蓝牙
+<button id="btnBluetoothList">Bluetooth-List</button>
+<button id="btnBluetoothConnect">Bluetooth-Connect</button>
+<button id="btnBluetoothSendA">Bluetooth-Send-A</button>
+<button id="btnBluetoothSendB">Bluetooth-Send-B</button>
+<button id="btnBluetoothSendC">Bluetooth-Send-C</button>
+<button id="btnBluetoothSendD">Bluetooth-Send-D</button>
+<button id="btnBluetoothSendF">Bluetooth-Send-F</button>
+</br></br>
+
+文件
+<button id="btnFileList">File-List</button>
+</br></br>
+
+摄像头
+<button id="btnCameraList">Camera-List</button>
+</br></br>
+
+喇叭
+<button id="btnSoundList">Sound-List</button>
+</br></br>
+
+麦克风
+<button id="btnRecordList">Record-List</button>
+<button id="btnRecordShow">Record-Show</button>
+<button id="btnRecordShow02">Record-Show02</button>
+<button id="btnRecordShow03">Record-Show03</button>
+</br></br>
+
+结果
+<div id="divInfo"></div>
+</br></br>
+
+日志
+<div id="divLog"></div>
+
+
+</body>
+
+</html>

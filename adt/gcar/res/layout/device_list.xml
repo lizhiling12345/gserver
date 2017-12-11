@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff8a2be2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffffffff" android:id="@id/title_paired_devices" android:background="#ff666666" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="已配对设备" />
+    <ListView android:id="@id/paired_devices" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stackFromBottom="true" android:cacheColorHint="#00000000" android:layout_weight="1.0" />
+    <TextView android:textColor="#ffffffff" android:id="@id/title_new_devices" android:background="#ff666666" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="其他设备" />
+    <ListView android:id="@id/new_devices" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stackFromBottom="true" android:cacheColorHint="#00000000" android:layout_weight="2.0" />
+    <Button android:id="@id/button_scan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="搜索" />
+</LinearLayout>
